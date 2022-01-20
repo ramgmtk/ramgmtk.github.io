@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=decide-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1">
         <title>Rammohan Ramanathan Portfolio</title>
         <link rel="stylesheet" href="./src/style.css">
     </head>
@@ -11,25 +11,38 @@
         <h1 id="name">Rammohan Ramanathan Portfolio</h1>
         <h3 style="text-align: center;">Aspiring Programmer</h3>
         <hr>
-        <p>
-            <h2><u>Links</u></h2>
-            <a href="https://www.linkedin.com/in/rammohan-ramanathan-1a6949173/" target="_blank">LinkedIn</a><br>
-            <br>
-            <a href="https://github.com/ramgmtk" target="_blank">Github</a><br>
-            <br>
-            <a href="./src/docs/RammohanResumeShortVersion.pdf" target="_blank">Resume</a><br>
-            <br>
-        </p>
-        <P>
-            <h2><u>My most recent project</u></h2>
-            <a href="https://redhawkstudios.itch.io/gods-of-corruption" target="_blank">UCSC Senior Capstone Game</a><br>
-            <br>
-            During my final year at UCSC I worked in a team of 11 on a game called "Gods Of Corruption".<br>
-            I was one of the three programmers who helped develope the game.<br>
-            The game was made using the Unity Engine, and the Yarn Spinner dialogue tool.<br>
-            It is an action game centered around the boss rush genre.<br>
-            <br>
-        </P>
+        <div class="container">
+            <h2 class="page">About</h2>
+            <h2 class="page">Recent Projects</h2>
+            <h2 class="page">Resume</h2>
+        </div>
+        <br>
+        <div class="container">
+            <div id="about"></div>
+            <div id="project">
+                <P>
+                    <h2><u>My most recent project</u></h2>
+                    <a href="https://redhawkstudios.itch.io/gods-of-corruption" target="_blank">UCSC Senior Capstone Game</a><br>
+                    <br>
+                    During my final year at UCSC I worked in a team of 11 on a game called "Gods Of Corruption".<br>
+                    I was one of the three programmers who helped develope the game.<br>
+                    The game was made using the Unity Engine, and the Yarn Spinner dialogue tool.<br>
+                    It is an action game centered around the boss rush genre.<br>
+                    <br>
+                </P>
+            </div>
+            <div id="resume">
+                <iframe src="./src/docs/RammohanResumeShortVersion.pdf" width=1000px height=1000px></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h2 style="text-align:center;"><u>Links</u></h2>
+            <a href="https://www.linkedin.com/in/rammohan-ramanathan-1a6949173/" target="_blank" class="link">LinkedIn</a>
+            <a href="https://github.com/ramgmtk" target="_blank" class="link">Github</a>
+            <a href="./src/docs/RammohanResumeShortVersion.pdf" target="_self" class="link">Resume</a>
+        </div>
     </body>
+    <script src="./src/main.js"></script>
 </html>
 
