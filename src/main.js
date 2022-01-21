@@ -16,20 +16,20 @@ function displayFunction(index)
 {
     if (index == 0)
     {
-        aboutPage.style.display =  'inline';
+        aboutPage.style.display =  'inline-block';
         projectPage.style.display = 'none';
         resumePage.style.display = 'none';
     }
     else if (index == 1)
     {
         aboutPage.style.display =  'none';
-        projectPage.style.display = 'inline';
+        projectPage.style.display = 'inline-block';
         resumePage.style.display = 'none';
     }
     else if (index == 2)
     {
         aboutPage.style.display =  'none';
         projectPage.style.display = 'none';
-        resumePage.style.display = 'inline';
+        resumePage.style.display = 'inline-block';
     }
 }

@@ -19,8 +19,19 @@
     display: inline-block;
 }
 
+/*https://stackoverflow.com/questions/2757483/limiting-the-number-of-characters-per-line-with-css/49923325 sourfce user Alex
+https://forum.freecodecamp.org/t/margin-auto-inline-block-not-centering/326818 srouce austinmoore1942*/
 #project{
     display: none;
+}
+
+.description{
+    max-width: 500px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    margin: auto;
+    text-align: left;
 }
 
 #about{
