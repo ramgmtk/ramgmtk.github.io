@@ -18,30 +18,69 @@
         </div>
         <br>
         <div class="container">
-            <div id="about"></div>
+            <div id="about">
+                <p>
+                    <div class="description">
+                        My name is Rammohan Ramanathan. I graduated from the University of California, Santa Cruz 
+                        with a bachelors in Computer Science: Game design. While programming games is fun, I also enjoy 
+                        programming in a general software engineering sense. Optimizing code for use with multiple cores in a processor  
+                        and utilizing algorithms to improve runtime of programming tasks are some non-game focused areas I enjoy 
+                        working in.
+                        <br>
+                        <br>
+                        There is a gap in my education after graduating from High School. Between 2013 and 2017 I took a break from college 
+                        as I was not performing well and was not happy with my current degree choice. I returned to college in 2017 and took up 
+                        pursuing a degree in computer science. My prior experience with mathematics and programming was sour as I was poor in those subjects. 
+                        However after the break I took I was able to approach these classes with a more focused mind and a different way of thinking. 
+                        I believe the break I took helped me to shift my perspective on education and as a result I performed better than I ever 
+                        have in school, earning highest honors on my bachelors degree.
+                    </div>
+                </p>
+            </div>
             <div id="project">
                 <p>
                     <h2><u>My most recent project</u></h2>
                     <a href="https://redhawkstudios.itch.io/gods-of-corruption" target="_blank">UCSC Senior Capstone Game</a><br>
                     <br>
-                    <div class="description">
+                    <div class="description" style="float: left; padding-right: 100px;">
                         During my final year at UCSC I worked in a team of 11 on a game called "Gods Of Corruption".
                         I was one of the three programmers who helped develope the game.
                         The game was made using the Unity Engine, and the Yarn Spinner dialogue tool.
-                        It is an action game centered around the boss rush genre.
+                        It is an action game centered around the boss rush genre. I worked on programming some of the bosses, 
+                        the ui, and overall bug fixing. The footage on in the preview video uses a slightly older build of our game.
                     </div>
+                    <iframe width="600" height="450" src="https://www.youtube.com/embed/lP4jzGvWmIc"></iframe>
                     <br>
                 </p>
                 <p>
-                    <h2>Dynamic Dungeon Generation</h2>
+                    <h2><u>Dynamic Dungeon Generation</u></h2>
                     <div class="description" style="float: left; padding-right: 100px;">
-                    My group project for my Game AI class was based around procedurally generating a dungeon that
-                    was solveable given whatever mechanics a designer adds to the dungeon. We used Unity to create a
-                    simplified dungeon generation tooland used AI programming techniques such as constraint satisfaction,
-                    goal oriented action planning, and drama management to verify a dungeons completion as well as monitor
-                    the dungeons state dynamically.
+                        My group project for my Game AI class was based around procedurally generating a dungeon that
+                        was solveable given whatever mechanics a designer adds to the dungeon. We used Unity to create a
+                        simplified dungeon generation tool which utilized AI programming techniques such as constraint satisfaction,
+                        goal oriented action planning, and drama management to verify a dungeons completion as well as monitor
+                        the dungeons state dynamically. The avatar moving through the dungeon finds the most effective path to 
+                        get the key to exit the dungeon, and navigate towards the exit room. Using some basic heuristics we 
+                        determine if the player would survive the room encounter and spawn more enemies or health in the next room 
+                        accordingly.
                     </div>
                     <img src="./src/media/cmpm146_project.gif">
+                    <br>
+                </p>
+                <p>
+                    <h2><u>Procedural Planet Generation</u></h2>
+                    <div class="description" style="float: left; padding-right: 100px;">
+                        For my generative design class I worked with my classmates to create an environment 
+                        that could generate planets procedurally while having them orbit. 
+                        The base concept was adapted from a youtube tutorial by Sebastian Lague. 
+                        The planets generated use multiple layers of simplex noise to create complex 
+                        and varied surface level features. I modified the planet generation by having 
+                        the work be computed dynamically, as well as adding the ability to apply 
+                        seeds for generation. The additional features 
+                        such as adding rings around the planet, and how the planets were shaded were done by 
+                        my teammates.
+                    </div>
+                    <iframe width="600" height="450" src="https://www.youtube.com/embed/tsm4vFXlmik"></iframe>
                     <br>
                 </p>
             </div>

@@ -1,6 +1,7 @@
 console.log("main");
 var pageLinks = document.getElementsByClassName("page");
 var aboutPage = document.getElementById("about");
+aboutPage.style.display = 'inline-block';
 var projectPage = document.getElementById("project");
 var resumePage = document.getElementById("resume");
 for (let  i = 0; i < pageLinks.length; i++)
