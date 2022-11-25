@@ -1,116 +1,149 @@
 <!DOCTYPE html>
-<!-- Credit for html knowledge: https://www.youtube.com/watch?v=PlxWf493en4 User: freeCodeCamp-->
 <html>
     <head>
         <meta charset="utf-8">
+        <!--Make the website scale to the device it is being viewed on-->
         <meta name="viewport" content="initial-scale=1">
         <title>Rammohan Ramanathan Portfolio</title>
         <link rel="stylesheet" href="./src/style.css">
     </head>
     <body>
-        <h1 id="name">Rammohan Ramanathan Portfolio</h1>
-        <h3 style="text-align: center;">Aspiring Programmer</h3>
-        <hr>
-        <div class="container">
-            <h2 class="page">About</h2>
-            <h2 class="page">Recent Projects</h2>
-            <h2 class="page">Resume</h2>
-        </div>
-        <br>
-        <div class="container">
-            <div id="about">
-                <p>
-                    <div class="description">
+        <div class="main">
+            <nav>
+                <div class="title">
+                    <button id="home" class="clickable">Rammohan Ramanathan</button>
+                </div>
+                <div class="page-links">
+                    <ul>
+                        <li><a href="#home_page" id="home" class="clickable">Home</a></li>
+                        <li><a href="#about_page" id="about" class="clickable">About</a></li>
+                        <li><a href="#project_page" id="projects" class="clickable">Projects</a></li>
+                        <li><a href="#resume_page" id="resume" class="clickable">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="home_page" id="home_page">
+                    <p style="font-size: 64px;">Rammohan Ramanathan</p>
+                    <p style="font-size: 32px;">
+                        Aspiring Software Developer<br>
+                        UCSC 2021 Graduate<br>
+                        BS Computer Science: Game Design
+                    </p>
+                    <p style="font-size: 24px; margin-bottom: 20px; position: absolute; bottom: 0;">
+                        Scroll down or use the navigation options for more information.
+                    </p>
+                </div>
+                <div class="about_page" id="about_page">
+                    <p style="font-size: 32px; font-weight: bold; align-self: top; flex-basis: 100px">About</p>
+                    <p>
                         My name is Rammohan Ramanathan. I graduated from the University of California, Santa Cruz 
                         with a bachelors in Computer Science: Game design. While programming games is fun, I also enjoy 
                         programming in a general software engineering sense. Optimizing code for use with multiple cores in a processor  
                         and utilizing algorithms to improve runtime of programming tasks are some non-game focused areas I enjoy 
                         working in.
-                        <br>
-                        <br>
+                        <br><br>
                         There is a gap in my education after graduating from High School. Between 2013 and 2017 I took a break from college 
                         as I was not performing well and was not happy with my current degree choice. I returned to college in 2017 and took up 
                         pursuing a degree in computer science. My prior experience with mathematics and programming was sour as I was poor in those subjects. 
                         However after the break I took I was able to approach these classes with a more focused mind and a different way of thinking. 
                         I believe the break I took helped me to shift my perspective on education and as a result I performed better than I ever 
                         have in school, earning highest honors on my bachelors degree.
+                    </p>
+                </div>
+                <div class="project_page" id="project_page">
+                    <div class="project_header" style="font-size: 36px; font-weight: bold;">Projects</div>
+                    <!--divider-->
+                    <div class="project_header">
+                        <p>GraphPractice: Shortest Delivery Route</p>
+                        <a href="https://github.com/ramgmtk/GraphPractice" target="_blank">Github Repo</a>
                     </div>
-                </p>
+                    <div class="project">
+                        <p> 
+                            This github repositoty links to a small practice project I did to review working with graphs.
+                            I wanted to setup a program that could find the shortest path through multiple nodes
+                            from a given starting point. The inspiration for this project stemmed from watching a delivery driver drive their
+                            route to deliver parcels. I figure their naviagtion tool gives them the fastest path through multiple destinations
+                            so they can finish their job quickly. I wanted to try and create something similar. The program 
+                            makes use of dijkstra's shortest path and various supporting data structures like a min heap in order 
+                            to accomplish this.
+                        </p>
+                    </div>
+                    <!--divider-->
+                    <div class="project_header">
+                        <p>UCSC Capstone Project</p>
+                        <a href="https://redhawkstudios.itch.io/gods-of-corruption" target="_blank">Itch page</a><br>
+                    </div>
+                    <div class="project">
+                        <p>
+                            During my final year at UCSC I worked in a team of 11 on a game called "Gods Of Corruption".
+                            I was one of the three programmers who helped develope the game.
+                            The game was made using the Unity Engine, and the Yarn Spinner dialogue tool.
+                            It is an action game centered around the boss rush genre. I worked on programming some of the bosses, 
+                            the ui, and overall bug fixing. The footage on in the preview video uses a slightly older build of our game.
+                        </p>
+                        <iframe width="40%" height="400px" src="https://www.youtube.com/embed/lP4jzGvWmIc"></iframe>
+                    </div>
+                    <!--divider-->
+                    <div class="project_header">
+                        <p>Dynamic dungeon Generation</p>
+                    </div>
+                    <div class="project">
+                        <p>
+                            My group project for my Game AI class was based around procedurally generating a dungeon that
+                            was solveable given whatever mechanics a designer adds to the dungeon. We used Unity to create a
+                            simplified dungeon generation tool which utilized AI programming techniques such as constraint satisfaction,
+                            goal oriented action planning, and drama management to verify a dungeons completion as well as monitor
+                            the dungeons state dynamically. The avatar moving through the dungeon finds the most effective path to 
+                            get the key to exit the dungeon, and navigate towards the exit room. Using some basic heuristics we 
+                            determine if the player would survive the room encounter and spawn more enemies or health in the next room 
+                        </p>
+                        <img src="./src/media/cmpm146_project.gif">
+                    </div>
+                    <!--divider-->
+                    <div class="project_header">
+                        <p>Procedural Planet Generation</p>
+                    </div>
+                    <div class="project">
+                        <p>
+                            For my generative design class I worked with my classmates to create an environment 
+                            that could generate planets procedurally while having them orbit. 
+                            The base concept was adapted from a youtube tutorial by Sebastian Lague. 
+                            The planets generated use multiple layers of simplex noise to create complex 
+                            and varied surface level features. I modified the planet generation by having 
+                            the work be computed dynamically, as well as adding the ability to apply 
+                            seeds for generation. The additional features 
+                            such as adding rings around the planet, and how the planets were shaded were done by 
+                            my teammates.
+                        </p>
+                        <iframe width="40%" height="400" src="https://www.youtube.com/embed/tsm4vFXlmik"></iframe>
+                    </div>
+                    <!--divider-->
+                    <div class="project_header">
+                        <p></p>
+                    </div>
+                    <div class="project">
+                        <p></p>
+                    </div>
+                    <!--divider-->
+                </div>
+                <div class="resume_page" id="resume_page">
+                    <p>Resume</p>
+                    <!--https://www.codexworld.com/embed-pdf-document-file-in-html-web-page/-->
+                    <embed src="./src/docs/RammohanResumeShortVersion.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit" 
+                    width="100%" height="90%" type="application/pdf">
+                </div>
             </div>
-            <div id="project">
-                <p>
-                    <h2><u>Graph Practice: Shortest Delivery Route</u></h2>
-                    <a href="https://github.com/ramgmtk/GraphPractice" target="_blank">Github Repo</a><br>
-                    <br>
-                    <div class = "description">
-                        This github repositoty links to a small practice project I did to review working with graphs.
-                        I wanted to setup a program that could find the shortest path through multiple nodes
-                        from a given starting point. The inspiration for this project stemmed from watching a delivery driver drive their
-                        route to deliver parcels. I figure their naviagtion tool gives them the fastest path through multiple destinations
-                        so they can finish their job quickly. I wanted to try and create something similar. The program 
-                        makes use of dijkstra's shortest path and various supporting data structures like a min heap in order 
-                        to accomplish this.
-                    </div>
-                    <br>
-                </p>
-                <p>
-                    <h2><u>Dynamic Dungeon Generation</u></h2>
-                    <div class="description" style="float: left; padding-right: 100px;">
-                        My group project for my Game AI class was based around procedurally generating a dungeon that
-                        was solveable given whatever mechanics a designer adds to the dungeon. We used Unity to create a
-                        simplified dungeon generation tool which utilized AI programming techniques such as constraint satisfaction,
-                        goal oriented action planning, and drama management to verify a dungeons completion as well as monitor
-                        the dungeons state dynamically. The avatar moving through the dungeon finds the most effective path to 
-                        get the key to exit the dungeon, and navigate towards the exit room. Using some basic heuristics we 
-                        determine if the player would survive the room encounter and spawn more enemies or health in the next room 
-                        accordingly.
-                    </div>
-                    <img src="./src/media/cmpm146_project.gif">
-                    <br>
-                </p>
-                <p>
-                    <h2><u>UCSC Capstone Project</u></h2>
-                    <a href="https://redhawkstudios.itch.io/gods-of-corruption" target="_blank">Itch page</a><br>
-                    <br>
-                    <div class="description" style="float: left; padding-right: 100px;">
-                        During my final year at UCSC I worked in a team of 11 on a game called "Gods Of Corruption".
-                        I was one of the three programmers who helped develope the game.
-                        The game was made using the Unity Engine, and the Yarn Spinner dialogue tool.
-                        It is an action game centered around the boss rush genre. I worked on programming some of the bosses, 
-                        the ui, and overall bug fixing. The footage on in the preview video uses a slightly older build of our game.
-                    </div>
-                    <iframe width="600" height="450" src="https://www.youtube.com/embed/lP4jzGvWmIc"></iframe>
-                    <br>
-                </p>
-                <p>
-                    <h2><u>Procedural Planet Generation</u></h2>
-                    <div class="description" style="float: left; padding-right: 100px;">
-                        For my generative design class I worked with my classmates to create an environment 
-                        that could generate planets procedurally while having them orbit. 
-                        The base concept was adapted from a youtube tutorial by Sebastian Lague. 
-                        The planets generated use multiple layers of simplex noise to create complex 
-                        and varied surface level features. I modified the planet generation by having 
-                        the work be computed dynamically, as well as adding the ability to apply 
-                        seeds for generation. The additional features 
-                        such as adding rings around the planet, and how the planets were shaded were done by 
-                        my teammates.
-                    </div>
-                    <iframe width="600" height="450" src="https://www.youtube.com/embed/tsm4vFXlmik"></iframe>
-                    <br>
-                </p>
-            </div>
-            <div id="resume">
-                <iframe src="./src/docs/RammohanResumeShortVersion.pdf" width=1000px height=1000px></iframe>
-            </div>
+            <nav>
+                <div class="external_links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/rammohan-ramanathan/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/ramgmtk" target="_blank">Github</a></li>
+                        <li><a href="./src/docs/RammohanResumeShortVersion.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <hr>
-        <div class="container">
-            <h2 style="text-align:center;"><u>Links</u></h2>
-            <a href="https://www.linkedin.com/in/rammohan-ramanathan-1a6949173/" target="_blank" class="link">LinkedIn</a>
-            <a href="https://github.com/ramgmtk" target="_blank" class="link">Github</a>
-            <a href="./src/docs/RammohanResumeShortVersion.pdf" target="_self" class="link">Resume</a>
-        </div>
+        <!--<script src="./src/new.js"></script>-->
     </body>
-    <script src="./src/main.js"></script>
 </html>
-

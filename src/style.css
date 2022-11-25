@@ -1,48 +1,176 @@
-#name{
-    color:white;
-    background:blue;
-    text-align: center;
+/*Css tutorial provided by Easy Tutorials: https://www.youtube.com/watch?v=zxfhf-V4JFQ*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
 }
-
-.page{
-    color: white;
-    background: blue;
-    display: inline-block;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.link{
-    font-size: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    display: inline-block;
-}
-
-/*https://stackoverflow.com/questions/2757483/limiting-the-number-of-characters-per-line-with-css/49923325 sourfce user Alex
-https://forum.freecodecamp.org/t/margin-auto-inline-block-not-centering/326818 srouce austinmoore1942*/
-#project{
-    display: none;
-}
-
-.description{
-    max-width: 500px;
-    word-wrap: break-word;
-    white-space: normal;
+.main {
+    width: 100%;
+    height: 100vh; /*vh = viewport height*/
+    position: relative;
     overflow: hidden;
-    margin: auto;
-    text-align: left;
+    background: #4f4f4f;
 }
 
-#about{
+nav {
+    width: 90%;
+    margin: 20px auto;
+    font-weight: bold;
+    position: sticky;
+    z-index: 1;
+    align-items: end;
+    display: flex;
+}
+
+.title button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    font-weight: inherit;
+}
+
+.page-links {
+    flex: 1;
+    text-align: right;
+}
+
+.page-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.page-links ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.information {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+/*https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll user hristo eftimov*/
+.information::-webkit-scrollbar {
     display: none;
 }
 
-#resume{
-    display: none;
+/*https://stackoverflow.com/questions/55408527/how-to-order-the-flexbox-direction-vertically user Patriciu Nista*/
+.home_page {
+    background: lightblue;
+    position: static;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.container{
+.home_page p {
+    color: white;
+    font-weight: bold;
     text-align: center;
 }
-/*source for display css help: https://stackoverflow.com/questions/4980525/css-center-display-inline-block*/
+
+/*https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block user josh corzier*/
+.about_page {
+    background: #4f4f4f;
+    position: static;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about_page p {
+    color: white;
+    font-size: 24px;
+    max-width: 65%;
+    word-wrap: break-word;
+    text-align: left;
+    overflow: hidden;
+}
+
+.project_page {
+    background: white;
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.project_header {
+    color: inherit;
+    width: inherit;
+    height: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+
+.project {
+    display: flex;
+    flex-flow: row;
+    width: 80%;
+    height: auto;
+    align-items: top;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.project p {
+    font-size: 18px;
+    color: inherit;
+    text-align: left;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-width: 40%;
+}
+
+.resume_page {
+    background: #4f4f4f;
+    width: 100%;
+    height: inherit;
+    position: static;
+}
+
+.resume_page p {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.external_links {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.external_links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.external_links ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
