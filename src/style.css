@@ -14,7 +14,7 @@
 
 nav {
     width: 90%;
-    margin: 20px auto;
+    margin: 1.1vh auto;
     font-weight: bold;
     position: sticky;
     z-index: 1;
@@ -26,7 +26,7 @@ nav {
     background: none;
     border: none;
     color: white;
-    font-size: 32px;
+    font-size: 1.75vw;
     font-weight: inherit;
 }
 
@@ -38,12 +38,12 @@ nav {
 .page-links ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0vh 1.1vw;
 }
 
 .page-links ul li a {
     color: white;
-    font-size: 24px;
+    font-size: 1.32vw;
     text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ nav {
 
 .about_page p {
     color: white;
-    font-size: 24px;
+    font-size: 1.32vw;
     max-width: 65%;
     word-wrap: break-word;
     text-align: left;
@@ -117,10 +117,10 @@ nav {
     color: inherit;
     width: inherit;
     height: inherit;
-    font-size: 24px;
+    font-size: 1.32vw;
     font-weight: bold;
     text-align: center;
-    padding: 25px;
+    padding: 1.375vw;
 }
 
 .project {
@@ -130,11 +130,11 @@ nav {
     height: auto;
     align-items: top;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 2.75vw;
 }
 
 .project p {
-    font-size: 18px;
+    font-size: 1vw;
     color: inherit;
     text-align: left;
     display: inline-block;
@@ -151,14 +151,14 @@ nav {
 }
 
 .resume_page p {
-    font-size: 32px;
+    font-size: 1.75vw;
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 .external_links {
-    margin-top: 25px;
+    margin-top: 1.375vw;
     width: 100%;
     text-align: center;
 }
@@ -166,11 +166,11 @@ nav {
 .external_links ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 2.75vw;
 }
 
 .external_links ul li a {
     color: white;
-    font-size: 24px;
+    font-size: 1.32vw;
     text-decoration: none;
 }
