@@ -101,8 +101,9 @@ nav {
 
 .about_page p {
     color: white;
-    font-size: 1.5rem;
-    max-width: 65%;
+    /*font-size: 1.5rem;*/
+    font-size: calc(1vw + 0.8vh);
+    max-width: 70%;
     word-wrap: break-word;
     text-align: left;
     overflow: hidden;
