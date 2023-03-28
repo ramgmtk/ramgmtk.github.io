@@ -4,6 +4,11 @@
     padding: 0;
     font-family: "Verdana", serif;
 }
+
+html {
+    font-size: 16x;
+}
+
 .main {
     width: 100%;
     height: 100vh; /*vh = viewport height*/
@@ -26,7 +31,7 @@ nav {
     background: none;
     border: none;
     color: white;
-    font-size: 1.75vw;
+    font-size: 2rem;
     font-weight: inherit;
 }
 
@@ -43,7 +48,7 @@ nav {
 
 .page-links ul li a {
     color: white;
-    font-size: 1.32vw;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -94,7 +99,7 @@ nav {
 
 .about_page p {
     color: white;
-    font-size: 1.32vw;
+    font-size: 1.5rem;
     max-width: 65%;
     word-wrap: break-word;
     text-align: left;
@@ -117,7 +122,7 @@ nav {
     color: inherit;
     width: inherit;
     height: inherit;
-    font-size: 1.32vw;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     padding: 1.375vw;
@@ -126,7 +131,7 @@ nav {
 .project {
     display: flex;
     flex-flow: row;
-    width: 80%;
+    width: 90%;
     height: auto;
     align-items: top;
     justify-content: space-evenly;
@@ -134,13 +139,18 @@ nav {
 }
 
 .project p {
-    font-size: 1vw;
+    font-size: 1rem;
     color: inherit;
     text-align: left;
     display: inline-block;
     word-wrap: break-word;
     overflow: hidden;
-    max-width: 40%;
+    max-width: 50%;
+}
+
+.project iframe {
+    width: 40%;
+    height: 50%;
 }
 
 .resume_page {
@@ -151,7 +161,7 @@ nav {
 }
 
 .resume_page p {
-    font-size: 1.75vw;
+    font-size: 2rem;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -171,6 +181,6 @@ nav {
 
 .external_links ul li a {
     color: white;
-    font-size: 1.32vw;
+    font-size: 1.5rem;
     text-decoration: none;
 }
