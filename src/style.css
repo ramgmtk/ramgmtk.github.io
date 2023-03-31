@@ -171,14 +171,20 @@ nav {
 }
 
 .resume_page p {
-    font-size: calc(1vw + 1.5rem);
+    font-size: calc(1vw + 1.0rem);
     color: white;
     font-weight: bold;
+    /*max-height: 10%;*/
+}
+
+.resume_page object {
+    max-height: 85%;
 }
 
 .resume_page a {
     font-size: calc(1vw + 0.25rem);
     color: white;
+    /*max-height: 5%;*/
 }
 
 .external_links {
