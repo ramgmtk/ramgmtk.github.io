@@ -125,7 +125,7 @@ nav {
     color: inherit;
     width: inherit;
     height: inherit;
-    font-size: 1.5rem;
+    font-size: calc(1vw + 1.5rem);
     font-weight: bold;
     text-align: center;
     padding: 1.375vw;
@@ -142,7 +142,7 @@ nav {
 }
 
 .project p {
-    font-size: 1rem;
+    font-size: calc(1vw + .75rem);
     color: inherit;
     text-align: left;
     display: inline-block;
