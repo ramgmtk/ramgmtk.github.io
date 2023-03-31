@@ -148,14 +148,15 @@ nav {
     display: inline-block;
     word-wrap: break-word;
     overflow: hidden;
-    max-width: 50%;
+    max-width: 80vw;
+    min-width: 40vw;
 }
 
 .project iframe {
     min-height: 40vh;
-    min-width: 30vw;
+    min-width: 40vw;
     max-height: 40vh;
-    max-width: 40vw;
+    max-width: 50vw;
     width: 40%;
     height: 50%;
 }
