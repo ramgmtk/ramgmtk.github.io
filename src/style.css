@@ -160,18 +160,25 @@ nav {
     height: 50%;
 }
 
+
+/*https://stackoverflow.com/questions/6243070/css-text-align-center-is-not-centering-things user DanKodi*/
 .resume_page {
     background: #4f4f4f;
     width: 100%;
     height: inherit;
     position: static;
+    text-align: center;
 }
 
 .resume_page p {
-    font-size: 2rem;
+    font-size: calc(1vw + 1.5rem);
     color: white;
     font-weight: bold;
-    text-align: center;
+}
+
+.resume_page a {
+    font-size: calc(1vw + 0.25rem);
+    color: white;
 }
 
 .external_links {
