@@ -1,9 +1,9 @@
-import pData from './projects.json' assert { type: 'json'};
+import pData from './projects.json' with { type: 'json'};
 //https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server
 //we cannot use require as that is specific to a node.js environment
 /*async function fetchProjects() {
-    const pData = await require('./projects.json');
-    return pData;
+    const jData = await fetch('./projects.json');
+    return await jData.json();
 }*/
 
 function buildProjectPage(projectData) {
@@ -37,8 +37,8 @@ function buildProjectPage(projectData) {
             if (project.source_type == 'img') {
                 const imgTag = document.createElement('img');
                 imgTag.src = project.source_link;
-                imgTag.width = project.width;
-                imgTag.height = project.height;
+                imgTag.style.width = project.width;
+                imgTag.style.height = project.height;
                 pBodyDiv.append(imgTag);
             } else {
                 const iframeTag = document.createElement('iframe');
@@ -51,8 +51,9 @@ function buildProjectPage(projectData) {
     })
 }
 
-function buildPage() {
+async function buildPage() {
     //const pData = await fetchProjects();
+    //console.log(pData);
     buildProjectPage(pData.projects);
 }
 
