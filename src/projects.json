@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "header": "Monte Carlo Tree Search Review: Tic Tac Toe",
+            "repo_link": "https://github.com/ramgmtk/MCTS-Tic-Tac-Toe",
+            "repo_title": "Githup Repo",
+            "description": "This github repository is being used to practice the implementation of MCTS.\nI prototyped an android app that plays tic tac toe against the user. \nthe first passs of the code was done in c++. The program is a tac tac toe bot which uses \nMonte Carlo to inform the bots decisions each turn. The bot prioritizes wins and ignores \ndefense currently as a result of its current rollout strategy.\nThe java version of the code is almost an exact copy of the c++ prototype, with some minor class changes to better suit java syntax.\nThe application was built in android app studio using the java version of the project as a source. The app studio classes interface with the\nunderlying java code to update the state of the board in the application.",
+            "source_type": "img",
+            "source_link": "./src/media/tictactoe_recording.gif",
+            "width": "40%",
+            "height": "40%"
+        },
+        {
+            "header": "GraphPractice: Shortest Delivery Route",
+            "repo_link": "https://github.com/ramgmtk/GraphPractice",
+            "repo_title": "Githup Repo",
+            "description": "This github repository links to a small practice project I did to review working with graphs.\nI wanted to setup a program that could find the shortest path through multiple nodes\nfrom a given starting point. The inspiration for this project stemmed from watching a delivery driver drive their\nroute to deliver parcels. I figure their naviagtion tool gives them the fastest path through multiple destinations\nso they can finish their job quickly. I wanted to try and create something similar. The program \nmakes use of dijkstra's shortest path and various supporting data structures like a min heap in order \nto accomplish this."
+        },
+        {
+            "header": "UCSC Capstone Project",
+            "repo_link": "https://redhawkstudios.itch.io/gods-of-corruption",
+            "repo_title": "Itch Page",
+            "description": "During my final year at UCSC I worked in a team of 11 on a game called \"Gods Of Corruption\".\nI was one of the three programmers who helped develope the game.\nThe game was made using the Unity Engine, and the Yarn Spinner dialogue tool.\nIt is an action game centered around the boss rush genre. I worked on programming some of the bosses, \nthe ui, and overall bug fixing. The footage on in the preview video uses a slightly older build of our game.",
+            "source_type": "iframe",
+            "source_link": "https://www.youtube.com/embed/lP4jzGvWmIc"
+        },
+        {
+            "header": "Dynamic dungeon Generation",
+            "description": "My group project for my Game AI class was based around procedurally generating a dungeon that\nwas solveable given whatever mechanics a designer adds to the dungeon. We used Unity to create a\nsimplified dungeon generation tool which utilized AI programming techniques such as constraint satisfaction,\ngoal oriented action planning, and drama management to verify a dungeons completion as well as monitor\nthe dungeons state dynamically. The avatar moving through the dungeon finds the most effective path to \nget the key to exit the dungeon, and navigate towards the exit room. Using some basic heuristics we \ndetermine if the player would survive the room encounter and spawn more enemies or health in the next room ",
+            "source_type": "img",
+            "source_link": "./src/media/cmpm146_project.gif",
+            "width": "40%",
+            "height": "40%"
+        },
+        {
+            "header": "Procedural Planet Generation",
+            "description": "For my generative design class I worked with my classmates to create an environment\nthat could generate planets procedurally while having them orbit.\nThe base concept was adapted from a youtube tutorial by Sebastian Lague. \nThe planets generated use multiple layers of simplex noise to create complex \nand varied surface level features. I modified the planet generation by having \nthe work be computed dynamically, as well as adding the ability to apply \nseeds for generation. The additional features \nsuch as adding rings around the planet, and how the planets were shaded were done by \nmy teammates.",
+            "source_type": "iframe",
+            "source_link": "https://www.youtube.com/embed/tsm4vFXlmik"
+        }
+    ],
+    "_comment": [
+        {
+            "header": "",
+            "repo_link": "",
+            "repo_title": "",
+            "description": "",
+            "source_type": "",
+            "source_link": "",
+            "width": "",
+            "height": ""
+        }
+    ]
+}
