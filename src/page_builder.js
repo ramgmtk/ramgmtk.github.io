@@ -58,6 +58,10 @@ async function buildPage() {
     buildProjectPage(pData.projects);
 }
 
+//various users online posted this solution. I lost the tab.
+//the underlying mistake
+//https://stackoverflow.com/questions/49481934/fetching-local-json
+//user ayeksius
 fetch("./src/projects.json")
     .then(result=>result.json())
     .then(data=>buildProjectPage(data.projects));
