@@ -1,10 +1,12 @@
-import pData from './projects.json' with { type: 'json'};
+//import pData from './projects.json' with { type: 'json'};
 //https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server
 //we cannot use require as that is specific to a node.js environment
+
 /*async function fetchProjects() {
-    const jData = await fetch('./projects.json');
+    const jData = await fetch(url);
     return await jData.json();
 }*/
+
 
 function buildProjectPage(projectData) {
     const projectDiv = document.getElementById("project_page");
@@ -51,10 +53,13 @@ function buildProjectPage(projectData) {
     })
 }
 
+
 async function buildPage() {
-    //const pData = await fetchProjects();
-    //console.log(pData);
     buildProjectPage(pData.projects);
 }
 
-buildPage();
+fetch("./src/projects.json")
+    .then(result=>result.json())
+    .then(data=>buildProjectPage(data.projects));
+
+//buildPage();
